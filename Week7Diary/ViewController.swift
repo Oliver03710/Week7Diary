@@ -7,42 +7,71 @@
 
 import UIKit
 import UIFramework
+import SnapKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Properties
+
+    let nameButton: UIButton = {
+       let view = UIButton()
+        view.setTitle("닉네임", for: .normal)
+        view.backgroundColor = .black
+        view.tintColor = .black
+        return view
+    }()
     
     
-    
+    // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
         
+        nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(saveButtonNotificationObserver(notification:)), name: Notification.Name("saveButtonNotification"), object: nil)
+    }
+    
+    
+    // MARK: - Selectors
+    
+    @objc func saveButtonNotificationObserver(notification: Notification) {
+        
+        if let text = notification.userInfo?["name"] as? String {
+            self.nameButton.setTitle(text, for: .normal)
+        } else {
+            print("데이터 없음")
+        }
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    @objc func nameButtonClicked() {
         
-//        showAlert(title: "테스트 얼럿", message: "테스트 메세지", buttonTitle: "변경") { _ in
-//            self.view.backgroundColor = .lightGray
-//        }
+        NotificationCenter.default.post(name: NSNotification.Name("test"), object: nil, userInfo: ["name": "\(Int.random(in: 1...100))", "value": 123456 ])
         
-        testOpen()
-        
-//        let image = UIImage(systemName: "star.fill")!
-//        let shareURL = "https://www.apple.com"
-//        let text = "WWDC What's New!"
-//        showActivityViewController(shareImage: image, shareURL: shareURL, shareText: text)
-        
-        OpenWebView.presentWebViewController(self, url: "https://www.naver.com", transitionStyle: .present)
-        
-        
-        
-        
-        
+        let vc = ProfileViewController()
+
+        vc.saveButtonActionHandler = { text in
+            self.nameButton.setTitle(text, for: .normal)
+
+        }
+
+        present(vc, animated: true)
     }
     
+    
+    // MARK: - Helper Functions
+    
+    func configure() {
+        
+        view.addSubview(nameButton)
+        
+        nameButton.snp.makeConstraints { make in
+            make.width.height.equalTo(200)
+            make.center.equalTo(view)
+        }
+    }
     
 }
 

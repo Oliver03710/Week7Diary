@@ -13,6 +13,7 @@ class WalkThroughViewController: UIPageViewController {
     
     // 배열 형태로 뷰컨트롤러를 추가
     var pageViewControllerList: [UIViewController] = []
+    var pageControl = UIPageControl()
     
     
     // MARK: - Init
@@ -71,7 +72,7 @@ extension WalkThroughViewController: UIPageViewControllerDelegate, UIPageViewCon
         
         guard let viewControllerIndex = pageViewControllerList.firstIndex(of: viewController) else { return nil }
         
-        let nextIndex = viewControllerIndex + 1  // -1
+        let nextIndex = viewControllerIndex + 1  // 3
         
         return nextIndex >= pageViewControllerList.count ? nil : pageViewControllerList[nextIndex]
         

@@ -20,6 +20,17 @@
 		AD292EBE28AB40CF0054DADE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD292EBD28AB40CF0054DADE /* SecondViewController.swift */; };
 		AD292EC028AB40D80054DADE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD292EBF28AB40D80054DADE /* ThirdViewController.swift */; };
 		AD292EC428AB41900054DADE /* WalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD292EC328AB41900054DADE /* WalkThroughViewController.swift */; };
+		AD521C6328AF12780078BAA3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD521C6228AF12780078BAA3 /* BaseViewController.swift */; };
+		AD521C6628AF14460078BAA3 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD521C6528AF14460078BAA3 /* WriteViewController.swift */; };
+		AD521C6828AF169B0078BAA3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD521C6728AF169B0078BAA3 /* BaseView.swift */; };
+		AD521C6A28AF179A0078BAA3 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD521C6928AF179A0078BAA3 /* WriteView.swift */; };
+		AD521C6D28AF2CFD0078BAA3 /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD521C6C28AF2CFD0078BAA3 /* BlackRadiusTextField.swift */; };
+		ADA76A6128AC71B3009F2F07 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA76A6028AC71B3009F2F07 /* CodeViewController.swift */; };
+		ADA76A6928AC822F009F2F07 /* CodeSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA76A6828AC822F009F2F07 /* CodeSnapViewController.swift */; };
+		ADA76A6C28AC8607009F2F07 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ADA76A6B28AC8607009F2F07 /* SnapKit */; };
+		ADA76A6E28AC8C22009F2F07 /* CodeSnap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA76A6D28AC8C22009F2F07 /* CodeSnap2ViewController.swift */; };
+		ADDF994428ADDF060055CE83 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDF994328ADDF060055CE83 /* UIViewController+Extension.swift */; };
+		ADDF994628ADE60B0055CE83 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDF994528ADE60B0055CE83 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +79,16 @@
 		AD292EBD28AB40CF0054DADE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AD292EBF28AB40D80054DADE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		AD292EC328AB41900054DADE /* WalkThroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughViewController.swift; sourceTree = "<group>"; };
+		AD521C6228AF12780078BAA3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AD521C6528AF14460078BAA3 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		AD521C6728AF169B0078BAA3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		AD521C6928AF179A0078BAA3 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		AD521C6C28AF2CFD0078BAA3 /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
+		ADA76A6028AC71B3009F2F07 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		ADA76A6828AC822F009F2F07 /* CodeSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnapViewController.swift; sourceTree = "<group>"; };
+		ADA76A6D28AC8C22009F2F07 /* CodeSnap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnap2ViewController.swift; sourceTree = "<group>"; };
+		ADDF994328ADDF060055CE83 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		ADDF994528ADE60B0055CE83 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD292EB328AB2C630054DADE /* UIFramework.framework in Frameworks */,
+				ADA76A6C28AC8607009F2F07 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +127,13 @@
 			children = (
 				AD292E7028AB1FC80054DADE /* AppDelegate.swift */,
 				AD292E7228AB1FC80054DADE /* SceneDelegate.swift */,
+				AD521C6428AF141E0078BAA3 /* Diary */,
+				AD521C5F28AF125F0078BAA3 /* Utility */,
+				ADDF994028ADDEEB0055CE83 /* Extensions */,
+				ADA76A5D28AC7195009F2F07 /* CodeBase */,
 				AD292EB628AB3A550054DADE /* WalkThrough */,
 				AD292E7428AB1FC80054DADE /* ViewController.swift */,
+				ADDF994528ADE60B0055CE83 /* ProfileViewController.swift */,
 				AD292E7628AB1FC80054DADE /* Main.storyboard */,
 				AD292E7928AB1FC90054DADE /* Assets.xcassets */,
 				AD292E7B28AB1FC90054DADE /* LaunchScreen.storyboard */,
@@ -143,6 +170,51 @@
 			path = WalkThrough;
 			sourceTree = "<group>";
 		};
+		AD521C5F28AF125F0078BAA3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AD521C6B28AF2CD70078BAA3 /* CustomView */,
+				AD521C6228AF12780078BAA3 /* BaseViewController.swift */,
+				AD521C6728AF169B0078BAA3 /* BaseView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AD521C6428AF141E0078BAA3 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				AD521C6528AF14460078BAA3 /* WriteViewController.swift */,
+				AD521C6928AF179A0078BAA3 /* WriteView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		AD521C6B28AF2CD70078BAA3 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				AD521C6C28AF2CFD0078BAA3 /* BlackRadiusTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		ADA76A5D28AC7195009F2F07 /* CodeBase */ = {
+			isa = PBXGroup;
+			children = (
+				ADA76A6028AC71B3009F2F07 /* CodeViewController.swift */,
+				ADA76A6828AC822F009F2F07 /* CodeSnapViewController.swift */,
+				ADA76A6D28AC8C22009F2F07 /* CodeSnap2ViewController.swift */,
+			);
+			path = CodeBase;
+			sourceTree = "<group>";
+		};
+		ADDF994028ADDEEB0055CE83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADDF994328ADDF060055CE83 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +232,9 @@
 			dependencies = (
 			);
 			name = Week7Diary;
+			packageProductDependencies = (
+				ADA76A6B28AC8607009F2F07 /* SnapKit */,
+			);
 			productName = Week7Diary;
 			productReference = AD292E6D28AB1FC80054DADE /* Week7Diary.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +263,9 @@
 				Base,
 			);
 			mainGroup = AD292E6428AB1FC80054DADE;
+			packageReferences = (
+				ADA76A6A28AC8607009F2F07 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AD292E6E28AB1FC80054DADE /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -239,11 +317,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD521C6A28AF179A0078BAA3 /* WriteView.swift in Sources */,
+				AD521C6328AF12780078BAA3 /* BaseViewController.swift in Sources */,
+				AD521C6D28AF2CFD0078BAA3 /* BlackRadiusTextField.swift in Sources */,
 				AD292E7528AB1FC80054DADE /* ViewController.swift in Sources */,
+				ADDF994428ADDF060055CE83 /* UIViewController+Extension.swift in Sources */,
 				AD292E7128AB1FC80054DADE /* AppDelegate.swift in Sources */,
+				ADA76A6E28AC8C22009F2F07 /* CodeSnap2ViewController.swift in Sources */,
 				AD292E7328AB1FC80054DADE /* SceneDelegate.swift in Sources */,
+				AD521C6628AF14460078BAA3 /* WriteViewController.swift in Sources */,
 				AD292EBE28AB40CF0054DADE /* SecondViewController.swift in Sources */,
+				ADDF994628ADE60B0055CE83 /* ProfileViewController.swift in Sources */,
+				ADA76A6928AC822F009F2F07 /* CodeSnapViewController.swift in Sources */,
 				AD292EC028AB40D80054DADE /* ThirdViewController.swift in Sources */,
+				ADA76A6128AC71B3009F2F07 /* CodeViewController.swift in Sources */,
+				AD521C6828AF169B0078BAA3 /* BaseView.swift in Sources */,
 				AD292EC428AB41900054DADE /* WalkThroughViewController.swift in Sources */,
 				AD292EBC28AB3A990054DADE /* FirstViewController.swift in Sources */,
 			);
@@ -465,6 +553,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADA76A6A28AC8607009F2F07 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADA76A6B28AC8607009F2F07 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA76A6A28AC8607009F2F07 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD292E6528AB1FC80054DADE /* Project object */;
 }

@@ -14,7 +14,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var tutorialLabel: UILabel!
     @IBOutlet weak var blackView: UIView!
     @IBOutlet weak var blackViewWidth: NSLayoutConstraint!
-    
+    @IBOutlet weak var appleImageView: UIImageView!
     
     
     // MARK: - Init
@@ -35,10 +35,11 @@ class FirstViewController: UIViewController {
         tutorialLabel.alpha = 0
         UIView.animate(withDuration: 3) {
             self.tutorialLabel.alpha = 1
+            self.tutorialLabel.backgroundColor = .systemYellow
         } completion: { _ in
             self.animateBlackView()
         }
-
+        animateImageView()
     }
     
     
@@ -52,6 +53,13 @@ class FirstViewController: UIViewController {
             
         }
 
+    }
+    
+    func animateImageView() {
+        
+        UIView.animate(withDuration: 1, delay: 0, options: [.repeat, .autoreverse]) {
+            self.appleImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }
     }
     
 }
